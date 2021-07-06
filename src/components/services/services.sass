@@ -1,0 +1,50 @@
+.services
+  margin-top: 50px
+  padding: 0 30px
+  h2
+    font-weight: 800
+    font-size: 50px
+    margin-bottom: 55px
+  .servicecards
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    font-size: 17px
+    .servicecard
+      text-align: left
+      margin: 0 20px
+      p
+        font-size: 16px
+        color: #595959
+        line-height: 1.5em
+        font-weight: 400
+        font-family: Raleway
+      img
+        width: 50%
+      h4
+        font-weight: 600
+
+@media (max-width: 800px)
+  .services
+    .servicecards
+      grid-template-columns: 1fr 1fr
+      .servicecard
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        p
+          font-size: 18px
+        h4
+          font-size: 30px
+
+@media (max-width: 550px)
+  .services
+    padding: 0 6px
+    .servicecards
+      grid-template-columns: 1fr
+      .servicecard
+        margin-bottom: 35px
+      p
+        font-size: 22px
+      h4
+        font-size: 34px

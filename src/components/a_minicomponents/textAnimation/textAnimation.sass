@@ -1,0 +1,18 @@
+.hidden
+  opacity: 0
+  visibility: none
+.animatedText
+  font-size: 16px
+  white-space: nowrap
+  padding: 3px 6px
+  top: calc( 100% + 10px  )
+  left: 0
+  z-index: 100
+  position: absolute
+  opacity: 0
+  visibility: none
+  overflow: hidden
+  &.active
+    left: 5%
+    opacity: 1
+    visibility: visible

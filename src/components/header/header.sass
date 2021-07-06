@@ -1,0 +1,76 @@
+@import ../../main_styles/variables
+header
+  height: 100vh
+  width: 100%
+  background: #000
+  .onMobileText
+    display: none
+  .headerContainer
+    position: relative
+    padding: 0 7%
+    width: 100%
+    display: flex
+    height: calc(100vh - 60px)
+    .imgContainer
+      margin-left: auto
+      img
+        width: 410px
+    .hugeScreenText
+      position: relative
+      top: 8vh
+  .text
+    h4
+      font-size: 19px
+      font-weight: 700
+    h2
+      font-size: 47px
+      color: #fff
+      background: $primary
+      font-weight: 600
+    h3
+      font-size: 28px
+      font-weight: 700
+    h6
+      font-size: 20px
+      color: #fff
+      font-weight: 600
+      font-family: "Roboto", sans-serif
+    p
+      font-size: 19px
+  .btn-orange
+    padding: 10px 45px
+
+@media (max-width: 950px)
+  header
+    height: auto
+    .hugeScreenText
+      display: none
+    .headerContainer
+      flex-direction: column-reverse
+      height: auto
+      .imgContainer
+        margin: auto
+        img
+          width: 320px
+    .onMobileText
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      padding-bottom: 40px
+      h2
+        margin: 7px 0 0 0
+      h3
+        margin-bottom: 17px
+      .btn-orange
+        margin-top: 40px
+        width: 300px
+
+@media (max-width: 600px)
+  header
+    .headerContainer
+      padding: 0 12px
+    .onMobileText
+      h2
+        margin: 25px 0 18px 0
+        font-size: 41px

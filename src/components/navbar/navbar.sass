@@ -1,0 +1,66 @@
+@import ../../main_styles/variables
+.navbar
+  padding: 5px 40px
+  height: 60px
+  a
+    text-decoration: none
+    color: #fff
+    display: flex
+  i
+    position: relative
+    margin: 0 3px
+    top: -2px
+    &:hover
+      text-decoration: none
+
+  h1
+    position: relative
+    top: 3px
+    // font-family: 'Volkhov', serif
+  a.mr-auto
+    margin-right: auto !important
+  img
+    width: 50px
+    height: 50px
+    cursor: pointer
+    margin-right: 15px
+    position: relative
+    top: 4px
+  .options
+    color: white
+    position: absolute
+    top: 65px
+    right: 15px
+    padding: 10px 10px
+    border-radius: 3px
+    cursor: pointer
+    z-index: 50
+    h6
+      font-size: 13px
+.underlineHover
+  display: inline-flex
+  flex-direction: column
+  &.active::after
+    width: 50px
+  &:hover:after
+    width: 50px
+.underlineHover:after
+  background: none repeat scroll 0 0 transparent
+  bottom: 0
+  content: ""
+  display: block
+  height: 2px
+  // left: 50%
+  position: relative
+  background: #fff
+  transition: width 0.3s ease 0s, left 0.3s ease 0s
+  width: 0
+  display: inline-block
+
+@media (max-width: 700px)
+  .navbar
+    padding: 5px 17px
+    .logo
+      font-size: 35px
+    a, i
+      display: none
