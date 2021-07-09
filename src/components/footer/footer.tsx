@@ -15,16 +15,6 @@ function Footer() {
         </svg>
       </a>
       <a
-        href="https://github.com/gustavom12"
-        className="btn btn-1 fab fa-github flex"
-        data-aos="fade-up"
-        data-aos-delay="400"
-      >
-        <svg>
-          <rect x="0" y="0" fill="none" width="100%" height="100%" />
-        </svg>
-      </a>
-      <a
         href="https://www.linkedin.com/in/gustavo-mercado-1836461a4/"
         className="btn btn-1 fab fa-linkedin flex"
         data-aos="fade-up"
