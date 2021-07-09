@@ -6,6 +6,7 @@ import ContactUs from '../contact_us/contact_us';
 import Portfolio from '../portfolio/portfolio';
 import * as AOS from "aos"
 import "aos/dist/aos.css";
+import Footer from '../footer/footer';
 function App() {
   useEffect(()=>{
     AOS.init({
@@ -22,6 +23,7 @@ function App() {
       <Services/>
       <ContactUs/>
       <Portfolio/>
+      <Footer/>
     </main>
   );
 }

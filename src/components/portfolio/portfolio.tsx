@@ -1,32 +1,33 @@
-import React, { useState } from "react";
-import CellphonePortfolio from "./cellpronePortfolio";
+// import React, { useState } from "react";
+// import CellphonePortfolio from "./cellpronePortfolio";
 import ComputerPortfolio from "./computerPortfolio";
 import './portfolio.sass'
 function Portfolio() {
-  const [computerScreen, setComputerScreen] = useState(true);
+  // const [computerScreen, setComputerScreen] = useState(true);
   return (
     <section className="portfolio">
       <div className="flex mx-auto w-50 my-2 icons">
-        <i
+        {/* <i
           className={`
               fas fa-desktop mx-4 flex textFather iconButton fs-3
               ${computerScreen && "active"}
             `}
             onClick={() => { setComputerScreen(true) }}
         >
-        </i>
+        </i> */}
         <h2 className="text-center">Portfolio</h2>
-        <i
+        {/* <i
           className={`
               fas fa-mobile-alt mx-4 flex textFather iconButton fs-3
               ${!computerScreen && "active"}
             `}
           onClick={() => setComputerScreen(false)}
         >
-        </i>
+        </i> */}
       </div>
-      <div className="sitesContainer">
-        {computerScreen ? <ComputerPortfolio /> : <CellphonePortfolio/> }
+      <div className="sitesContainer" id="portfolio">
+        {/* {computerScreen ? <ComputerPortfolio /> : <CellphonePortfolio/> } */}
+        <ComputerPortfolio />
       </div>
     </section>
   )

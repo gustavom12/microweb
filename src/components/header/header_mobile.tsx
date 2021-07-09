@@ -20,7 +20,11 @@ function HeaderMobile() {
           nostrum deserunt quod iure, id culpa non quaerat sint eveniet.
         </p>
       <div data-aos-delay={800} data-aos="fade-right">
-        <button className="btn-orange fs-5 fw-bold text-white">
+        <button className="btn-orange fs-5 fw-bold text-white"
+        onClick={()=>{
+          const element = document.getElementById("services")
+          element?.scrollIntoView({block: "center", behavior: "smooth"})
+        }}>
           Ver más
         </button>
       </div>

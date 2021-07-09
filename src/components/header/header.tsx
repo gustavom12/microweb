@@ -6,7 +6,7 @@ import HeaderMobile from "./header_mobile";
 
 function Header() {
   return (
-    <header className="header bg-primary">
+    <header className="header bg-primary" id="header">
       <Navbar />
       <div
         className="w-100 headerContainer"
@@ -40,7 +40,12 @@ function Header() {
             </p>
           </TextAnimation>
           <TextAnimation delay={1500} margin="55px 0">
-            <button className="btn-orange animatedText fs-5 fw-bold text-white">
+            <button className="btn-orange animatedText fs-5 fw-bold text-white"
+              onClick={()=>{
+                const element = document.getElementById("services")
+                element?.scrollIntoView({block: "center", behavior: "smooth"})
+              }}
+            >
               Ver más
             </button>
           </TextAnimation>
