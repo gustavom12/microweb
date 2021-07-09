@@ -3,7 +3,7 @@ import CellphonePortfolio from "./cellpronePortfolio";
 import ComputerPortfolio from "./computerPortfolio";
 import './portfolio.sass'
 function Portfolio() {
-  const [computerScreen, setComputerScreen] = useState(false);
+  const [computerScreen, setComputerScreen] = useState(true);
   return (
     <section className="portfolio">
       <div className="flex mx-auto w-50 my-2 icons">

@@ -10,6 +10,7 @@
     "@types/node": "^12.20.7",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "aos": "^2.3.4",
     "bootstrap": "^5.0.0-beta3",
     "dotenv": "^8.2.0",
     "node-sass": "^5.0.0",
@@ -47,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.10"
   }
