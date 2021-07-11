@@ -7,6 +7,7 @@ import Portfolio from '../portfolio/portfolio';
 import * as AOS from "aos"
 import "aos/dist/aos.css";
 import Footer from '../footer/footer';
+// import Process from '../Process/Process';
 function App() {
   useEffect(()=>{
     AOS.init({
@@ -23,6 +24,7 @@ function App() {
       <Services/>
       <ContactUs/>
       <Portfolio/>
+      {/* <Process/> */}
       <Footer/>
     </main>
   );

@@ -10,7 +10,10 @@ function Navbar() {
   return (
     <nav className="navbar bg-primary text-white">
       <div className="d-flex justify-content-between w-100">
-        <h1 className="logo fw-bold">MICROWEB</h1>
+        <h1 className="logo fw-bold flex">
+          <img src="https://i.ibb.co/ySx81tQ/microweb.png" alt="" />
+          MICROWEB
+        </h1>
         <div className="flex">
           <div className="flex mx-2">
             <i className="fas fa-home"></i>
