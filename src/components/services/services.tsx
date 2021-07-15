@@ -1,6 +1,6 @@
 import React, { } from "react";
 import './services.sass'
-import media from "./social-media.svg"
+// import media from "./social-media.svg"
 import graph from "./computer.svg"
 function Services() {
   return (
@@ -35,7 +35,7 @@ function Services() {
             a un <span className="fw-bold text-black">costo accesible</span>.
           </p>
         </div>
-        <div className="servicecard" data-aos="fade-up" data-aos-delay="1200">
+        {/* <div className="servicecard" data-aos="fade-up" data-aos-delay="1200">
         <img src={media} alt=""/>
         <h4 className=""> Redes sociales </h4>
           <p style={{fontSize: "15px"}}>
@@ -46,7 +46,7 @@ function Services() {
             <span className="fw-bold text-black"> administración</span> de tus redes sociales para
             una <span className="fw-bold text-black">mayor atracción</span> de clientes.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   )
