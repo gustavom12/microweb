@@ -1,14 +1,16 @@
 import React, { } from "react";
 import './services.sass'
-// import media from "./social-media.svg"
-import graph from "./computer.svg"
+import designer from "../../assets/imgs/Website designer-amico.png"
+import img1 from "../../assets/imgs/Software engineer-amico.png"
+import img2 from "../../assets/imgs/Online ads-amico.png"
+
 function Services() {
   return (
     <section id="services" className="services">
       <h2 className="" data-aos="fade-right">SERVICIOS</h2>
       <div className="servicecards w-100" >
         <div className="servicecard" data-aos="fade-up" data-aos-delay="300">
-          <img src="https://i.ibb.co/D1Rfy8s/desarrollo-de-sotware-smartrural.png" alt="" />
+          <img src={img1} alt="" />
           <h4 className="" > Software </h4>
           <p >
             Software creado según tus necesidades <span className="fw-bold text-black">automatizando</span> tu trabajo,
@@ -16,7 +18,7 @@ function Services() {
           </p>
         </div>
         <div className="servicecard" data-aos="fade-up" data-aos-delay="600">
-        <img src="https://i.ibb.co/b77TmLd/servcios-it-desarrollo-software.png" alt="" />
+        <img src={designer} alt="" />
         <h4 className=""> Desarrollo web </h4>
           <p>
             Páginas web para que tu negocio <span className="fw-bold text-black">destaque</span>,
@@ -27,7 +29,7 @@ function Services() {
         </div>
         {/* https://smartrural.net/wp-content/uploads/desarrollo-de-sotware-smartrural.png */}
         <div className="servicecard" data-aos="fade-up" data-aos-delay="900">
-        <img src={graph} alt="" />
+        <img src={img2} alt="" />
         <h4 className=""> Google Ads </h4>
           <p>
             Con Google Ads nos aseguramos que llegue tráfico a

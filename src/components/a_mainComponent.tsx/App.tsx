@@ -7,6 +7,7 @@ import Portfolio from '../portfolio/portfolio';
 import * as AOS from "aos"
 import "aos/dist/aos.css";
 import Footer from '../footer/footer';
+import Beneficios from '../Beneficios/Beneficios';
 // import Process from '../Process/Process';
 function App() {
   useEffect(()=>{
@@ -22,6 +23,7 @@ function App() {
     <main className="App">
       <Header/>
       <Services/>
+      <Beneficios/>
       <ContactUs/>
       <Portfolio/>
       {/* <Process/> */}
